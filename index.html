@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Поздравление для Семейкина Антона Юрьевича</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: linear-gradient(to bottom, #3a2c0a, #1a1205);
+      color: #f5d76e;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      color: #ffd700;
+      text-shadow: 0 0 15px #ffcc00, 0 0 30px #ff9900;
+      animation: shine 3s infinite alternate;
+    }
+    h2 {
+      margin-top: 20px;
+      font-size: 2em;
+      color: #fff8dc;
+    }
+    p {
+      margin-top: 40px;
+      font-size: 1.3em;
+      line-height: 1.5;
+      color: #f0e68c;
+    }
+    .gold-nugget {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: radial-gradient(circle at 30% 30%, #ffd700, #b8860b);
+      border-radius: 50%;
+      animation: float 10s infinite;
+      opacity: 0.7;
+    }
+    .gold-nugget:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+    .gold-nugget:nth-child(2) { top: 40%; left: 70%; animation-delay: 2s; }
+    .gold-nugget:nth-child(3) { top: 70%; left: 30%; animation-delay: 4s; }
+    .gold-nugget:nth-child(4) { top: 20%; left: 80%; animation-delay: 6s; }
+
+    @keyframes shine {
+      0% { text-shadow: 0 0 10px #ffcc00; }
+      100% { text-shadow: 0 0 25px #ff9900, 0 0 50px #ffd700; }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+      100% { transform: translateY(0px) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="gold-nugget"></div>
+  <div class="gold-nugget"></div>
+  <div class="gold-nugget"></div>
+  <div class="gold-nugget"></div>
+
+  <h1>Семейкин Антон Юрьевич!</h1>
+  <h2>С Юбилеем — 40 лет!</h2>
+  <p>
+    Сегодня тебе 40 — золотой рубеж,<br>
+    возраст силы, мудрости и новых побед!<br><br>
+    Пусть каждый день приносит удачу,<br>
+    как золото из недр земли,<br>
+    а жизнь сияет так же ярко,<br>
+    как слитки в хранилище судьбы!<br><br>
+    Счастья, здоровья и неиссякаемой энергии!
+  </p>
+</body>
+</html>
